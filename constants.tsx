@@ -47,7 +47,7 @@ export const PROJECTS: Project[] = [
     },
     {
         title: "AI Resume Builder",
-        description: "an intelligent resume generation system that creates customized, ATS-friendly resumes based on user inputs.",
+        description: "An intelligent resume generation system that creates customized, ATS-friendly resumes based on user inputs.",
         tags: ["Gemini API", "Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
         imageUrl: "https://picsum.photos/seed/project3/400/200",
         liveDemoUrl: "https://ai-resume-builder-nine-mauve.vercel.app/",
