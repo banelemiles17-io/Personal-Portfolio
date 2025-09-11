@@ -35,24 +35,8 @@ const FadeIn: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 
 
 const App: React.FC = () => {
-    const [mousePosition, setMousePosition] = React.useState({ x: 0, y: 0 });
-
-    React.useEffect(() => {
-        const handleMouseMove = (event: MouseEvent) => {
-            setMousePosition({ x: event.clientX, y: event.clientY });
-        };
-        window.addEventListener('mousemove', handleMouseMove);
-        return () => {
-            window.removeEventListener('mousemove', handleMouseMove);
-        };
-    }, []);
-
   return (
-    <div className="bg-[#18181b]/50 font-sans leading-relaxed text-slate-300 selection:bg-teal-500/30"
-         style={{
-            background: `radial-gradient(600px at ${mousePosition.x}px ${mousePosition.y}px, rgba(20, 184, 166, 0.1), transparent 80%)`
-         }}
-    >
+    <div className="font-sans leading-relaxed text-slate-300 selection:bg-teal-500/30">
       <Header />
       <main className="pt-16">
         <Hero />
