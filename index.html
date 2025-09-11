@@ -30,10 +30,25 @@
     scroll-behavior: smooth;
   }
   body {
-    background-color: #020617; /* Simple, professional dark background */
+    background-color: #020617; /* Fallback color */
+    background-image: url('https://media.tenor.com/j2a_i4Q15hQAAAAC/stars-starry-sky.gif');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     font-family: 'Lato', sans-serif;
     overflow-x: hidden;
     color: #e0e0e0;
+  }
+
+  body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(2, 6, 23, 0.7); /* Dark overlay for readability */
+      z-index: -1;
   }
 
   h1, h2, h3, h4, h5, h6 {
