@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#18181b" />
+    <meta name="theme-color" content="#020617" />
     <meta
       name="description"
       content="AI/ML Professional Portfolio"
@@ -29,7 +29,7 @@
     scroll-behavior: smooth;
   }
   body {
-    background-color: #18181b; /* Grey-ish background */
+    background-color: #020617; /* Simple, professional dark background */
     font-family: 'Lato', sans-serif;
     overflow-x: hidden;
     color: #e0e0e0;
@@ -37,33 +37,6 @@
 
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
-  }
-  
-  #stars, #stars2, #stars3 {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background-repeat: repeat;
-    background-position: 0 0;
-  }
-  #stars {
-    background-image: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjVweCIgaGVpZ2h0PSI1cHgiIHZpZXdCb3g9IjAgMCA1IDUiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUgNSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHJlY3QgeD0iMiIgeT0iMiIgc3Ryb2tlPSIjMmRkNGJmIiBzdHJva2Utd2lkdGg9IjAuMiIgZmlsbD0iIzk5ZjZlNCIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjwvc3ZnPg==');
-    animation: animStar 50s linear infinite;
-  }
-  #stars2 {
-    background-image: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjVweCIgaGVpZ2h0PSI1cHgiIHZpZXdCb3g9IjAgMCA1IDUiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUgNSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHJlY3QgeD0iMiIgeT0iMiIgc3Ryb2tlPSIjNWVlYWQ0IiBzdHJva2Utd2lkdGg9IjAuMiIgZmlsbD0iI2NjZmJmMSIgd2lkdGg9IjIiIGhlaWdodD0iMiIvPjwvc3ZnPg==');
-    animation: animStar 100s linear infinite;
-  }
-  #stars3 {
-    background-image: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjVweCIgaGVpZ2h0PSI1cHgiIHZpZXdCb3g9IjAgMCA1IDUiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUgNSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHJlY3QgeD0iMiIgeT0iMiIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjAuMiIgZmlsbD0iI0ZGRkZGRiIgd2lkdGg9IjEiIGhlaWdodD0iMSIvPjwvc3ZnPg==');
-    animation: animStar 150s linear infinite;
-  }
-  @keyframes animStar {
-    from { transform: translate(0,0); }
-    to { transform: translate(-10000px, 5000px); }
   }
 
   @keyframes fadeInUp {
@@ -83,9 +56,6 @@
 </style>
 </head>
   <body>
-    <div id="stars"></div>
-    <div id="stars2"></div>
-    <div id="stars3"></div>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <script type="module" src="/index.tsx"></script>
