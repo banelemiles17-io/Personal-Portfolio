@@ -30,44 +30,44 @@ export const EXPERIENCE: Experience[] = [
 
 export const PROJECTS: Project[] = [
     {
-        title: "Sentiment Analysis for Customer Feedback",
-        description: "Developed a real-time sentiment analysis tool using NLP models to categorize customer feedback from various sources. The system achieved 92% accuracy, enabling faster response times to critical issues.",
+        title: "Sentiment Analysis Dashboard",
+        description: "An interactive dashboard that analyzes sentiment in text data, enabling users to understand emotional tone in customer reviews, social media posts, or other text content.",
         tags: ["Python", "TensorFlow", "Flask", "React", "Docker", "GCP"],
         imageUrl: "https://picsum.photos/seed/project1/400/200",
-        liveDemoUrl: "#",
-        sourceCodeUrl: "#"
+        liveDemoUrl: "https://jobus-ai-application.my.canva.site/dagxxhysk-g",
+        sourceCodeUrl: "https://github.com/Jozi-Navigators/Sentiment-Analysis-Dashboard.git"
     },
     {
-        title: "Image Recognition for Retail Analytics",
-        description: "Built a computer vision system to analyze in-store shelf images, detecting stock levels and product placement. This project utilized convolutional neural networks (CNNs) and resulted in a 15% reduction in out-of-stock incidents.",
+        title: "Image Generation",
+        description: "A specialized content generation tool that produces high-quality outputs for a specific use case",
         tags: ["PyTorch", "OpenCV", "FastAPI", "Kubernetes", "AWS S3"],
         imageUrl: "https://picsum.photos/seed/project2/400/200",
-        liveDemoUrl: "#",
-        sourceCodeUrl: "#"
+        liveDemoUrl: "https://image-gen-xo-main.tiiny.site/",
+        sourceCodeUrl: "https://github.com/Jozi-Navigators/image-gen-xo.git"
     },
     {
-        title: "AI-Powered Capstone Showcase Recommender",
-        description: "A capstone project that recommends compelling presentation topics based on a user's technical skills and interests. This system uses a content-based filtering approach with Gemini API for idea generation.",
+        title: "AI Resume Builder",
+        description: "an intelligent resume generation system that creates customized, ATS-friendly resumes based on user inputs.",
         tags: ["Gemini API", "Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
         imageUrl: "https://picsum.photos/seed/project3/400/200",
-        liveDemoUrl: "#",
-        sourceCodeUrl: "#"
+        liveDemoUrl: "https://ai-resume-builder-nine-mauve.vercel.app/",
+        sourceCodeUrl: "https://github.com/Jozi-Navigators/ai-resume-builder.git"
     },
     {
-        title: "Predictive Maintenance for Industrial Machinery",
+        title: "No-Code Chatbot",
         description: "Designed and implemented a machine learning model to predict equipment failures. By analyzing sensor data, the system provides early warnings, reducing downtime by 20% and maintenance costs by 12%.",
         tags: ["Python", "Scikit-learn", "Pandas", "MQTT", "Grafana"],
         imageUrl: "https://picsum.photos/seed/project4/400/200",
-        liveDemoUrl: "#",
-        sourceCodeUrl: "#"
+        liveDemoUrl: "https://schoolhub.ai/en-US/generate/chatbot/view/6fcb0878-6378-4a97-9489-080ee23e80a3?",
+        sourceCodeUrl: "https://github.com/banelemiles17-io/No-code-ChatBot.git"
     },
     {
-        title: "Serverless Data Processing Pipeline",
-        description: "Constructed an automated, event-driven data pipeline on AWS to process and analyze large datasets. The pipeline uses Lambda functions to transform data, storing results in DynamoDB for real-time analysis.",
+        title: "Celestial Learning Hub",
+        description: "A comprehensive AI application that solves a meaningful real-world problem by integrating multiple AI technologies into a cohesive solution.",
         tags: ["AWS Lambda", "API Gateway", "S3", "DynamoDB", "Node.js"],
         imageUrl: "https://picsum.photos/seed/project5/400/200",
-        liveDemoUrl: "#",
-        sourceCodeUrl: "#"
+        liveDemoUrl: "https://lock-in-one.vercel.app/",
+        sourceCodeUrl: "https://github.com/Jozi-Navigators/-End-to-End-AI-Solution.git"
     },
     {
         title: "Conversational AI Chatbot for Customer Support",
