@@ -38,12 +38,12 @@ const Hero: React.FC = () => {
 
                 <ul className="flex items-center gap-8" aria-label="Social media">
                     <li className="text-xs shrink-0">
-                        <a className="block text-slate-400 hover:text-teal-300 transition-all duration-300 ease-in-out transform hover:scale-125" href="#" target="_blank" rel="noreferrer noopener" aria-label="GitHub (opens in a new tab)">
+                        <a className="block text-slate-400 hover:text-teal-300 transition-all duration-300 ease-in-out transform hover:scale-125" href="https://github.com/banelemiles17-io?tab=repositories" target="_blank" rel="noreferrer noopener" aria-label="GitHub (opens in a new tab)">
                             {GITHUB_ICON}
                         </a>
                     </li>
                     <li className="text-xs shrink-0">
-                        <a className="block text-slate-400 hover:text-teal-300 transition-all duration-300 ease-in-out transform hover:scale-125" href="#" target="_blank" rel="noreferrer noopener" aria-label="LinkedIn (opens in a new tab)">
+                        <a className="block text-slate-400 hover:text-teal-300 transition-all duration-300 ease-in-out transform hover:scale-125" href="https://www.linkedin.com/in/banele-nkambule-179154188/" target="_blank" rel="noreferrer noopener" aria-label="LinkedIn (opens in a new tab)">
                             {LINKEDIN_ICON}
                         </a>
                     </li>
