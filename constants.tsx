@@ -92,22 +92,7 @@ export const PROJECTS: Project[] = [
         liveDemoUrl: "https://lock-in-one.vercel.app/",
         sourceCodeUrl: "https://github.com/Jozi-Navigators/-End-to-End-AI-Solution.git"
     },
-    {
-        title: "Conversational AI Chatbot for Customer Support",
-        description: "Developed an intelligent chatbot to handle common customer inquiries, improving response time and availability. Integrated with a knowledge base, it successfully resolves over 60% of incoming support requests automatically.",
-        tags: ["Dialogflow", "Firebase", "React", "Natural Language Understanding"],
-        imageUrl: "https://picsum.photos/seed/project6/400/200",
-        liveDemoUrl: "#",
-        sourceCodeUrl: "#"
-    },
-    {
-        title: "Interactive Data Visualization Dashboard",
-        description: "Created a dynamic dashboard for exploring complex datasets. The application allows users to filter, sort, and visualize data through various charts and graphs, providing actionable insights at a glance.",
-        tags: ["React", "D3.js", "TypeScript", "REST APIs", "Data Visualization"],
-        imageUrl: "https://picsum.photos/seed/project7/400/200",
-        liveDemoUrl: "#",
-        sourceCodeUrl: "#"
-    }
+    
 ];
 
 // Skill Icons
