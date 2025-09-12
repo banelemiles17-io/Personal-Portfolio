@@ -10,7 +10,7 @@ declare global {
 
 const Hero: React.FC = () => {
 
-    const handleDownloadCv = () => {
+    /*const handleDownloadCv = () => {
         const { jsPDF } = window.jspdf;
         const doc = new jsPDF();
         
@@ -104,18 +104,26 @@ const Hero: React.FC = () => {
         // --- End of Content ---
         
         doc.save("Banele_Nkambule_CV.pdf");
+    };*/
+    const handleDownloadCv = () => {
+        const link = document.createElement('a');
+        link.href = `${import.meta.env.BASE_URL}files/BaneleNkambule2024CandidateCV.pdf`; // Adjust path as needed
+        link.download = 'BaneleNkambule.pdf'; // This is the name the file will be saved as
+        document.body.appendChild(link); // Optional, but safer in some browsers
+        link.click();
+        document.body.removeChild(link); // Clean up
     };
 
     return (
         <section className="flex flex-col items-center justify-center text-center py-20 md:py-28 px-6">
             <div style={{ animationDelay: '100ms' }} className="animate-fadeInUp opacity-0 mb-6">
                 <img
-                    src="https://i.ibb.co/524SkC9/profile-pic.png"
+                    src={`${import.meta.env.BASE_URL}images/IMG.jpg`}
                     alt="Banele Miles Nkambule"
                     className="rounded-full w-48 h-48 md:w-56 md:h-56 object-cover border-4 border-teal-500/30 shadow-2xl shadow-teal-500/20"
                 />
             </div>
-            
+
             <h1 style={{ animationDelay: '200ms' }} className="text-4xl font-bold tracking-tight text-slate-100 sm:text-6xl animate-fadeInUp opacity-0">
                 Banele Miles Nkambule
             </h1>
@@ -127,7 +135,7 @@ const Hero: React.FC = () => {
             <p style={{ animationDelay: '400ms' }} className="mt-3 max-w-xl leading-normal text-slate-400 animate-fadeInUp opacity-0">
                 Passionate about solving complex problems with technology.
             </p>
-            
+
             <div style={{ animationDelay: '500ms' }} className="mt-8 flex flex-col sm:flex-row items-center gap-6 animate-fadeInUp opacity-0">
                 <button
                     onClick={handleDownloadCv}
@@ -139,18 +147,7 @@ const Hero: React.FC = () => {
                     Download CV
                 </button>
 
-                <ul className="flex items-center gap-8" aria-label="Social media">
-                    <li className="text-xs shrink-0">
-                        <a className="block text-slate-400 hover:text-teal-300 transition-all duration-300 ease-in-out transform hover:scale-125" href="https://github.com/Banele-M" target="_blank" rel="noreferrer noopener" aria-label="GitHub (opens in a new tab)">
-                            {GITHUB_ICON}
-                        </a>
-                    </li>
-                    <li className="text-xs shrink-0">
-                        <a className="block text-slate-400 hover:text-teal-300 transition-all duration-300 ease-in-out transform hover:scale-125" href="https://www.linkedin.com/in/banele-nkambule-153b6b315/" target="_blank" rel="noreferrer noopener" aria-label="LinkedIn (opens in a new tab)">
-                            {LINKEDIN_ICON}
-                        </a>
-                    </li>
-                </ul>
+                
             </div>
         </section>
     );

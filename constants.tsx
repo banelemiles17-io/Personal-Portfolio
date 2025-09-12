@@ -13,6 +13,29 @@ export const LINKEDIN_ICON = (
     </svg>
 );
 
+export const EMAIL_ICON = (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-6 w-6" aria-hidden="true">
+        <path d="M3 4a2 2 0 00-2 2v1.161l8.441 4.221a1.25 1.25 0 001.118 0L19 7.162V6a2 2 0 00-2-2H3z" />
+        <path d="M19 8.839l-7.77 3.885a2.75 2.75 0 01-2.46 0L1 8.839V14a2 2 0 002 2h14a2 2 0 002-2V8.839z" />
+    </svg>
+);
+
+export const CONTACT_ICON = (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-6 w-6" aria-hidden="true">
+        <path fillRule="evenodd" d="M2 3.5A1.5 1.5 0 013.5 2h1.148a1.5 1.5 0 011.465 1.175l.716 3.223a1.5 1.5 0 01-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 006.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 011.767-1.052l3.223.716A1.5 1.5 0 0118 15.352V16.5a1.5 1.5 0 01-1.5 1.5h-1.528a13.5 13.5 0 01-11.9-11.904A1.5 1.5 0 013.5 3H5a1.5 1.5 0 011.5 1.5v.528A13.5 13.5 0 012 3.5z" clipRule="evenodd" />
+    </svg>
+);
+
+export const SOCIAL_LINKS = {
+    github: "https://github.com/banelemiles17-io",
+    linkedin: "https://www.linkedin.com/in/banele-nkambule-179154188/",
+    email: "mailto:banelemiles17@gmail.com",
+    contact: "tel:0767480230"
+};
+
+// Replace '#' with the actual URL to your qualification document/image
+export const QUALIFICATION_URL = "https://i.ibb.co/L5hH8hW/Cert.png";
+
 export const EXPERIENCE: Experience[] = [
     {
         role: "Digital Associate Intern",
@@ -30,44 +53,44 @@ export const EXPERIENCE: Experience[] = [
 
 export const PROJECTS: Project[] = [
     {
-        title: "Sentiment Analysis for Customer Feedback",
-        description: "Developed a real-time sentiment analysis tool using NLP models to categorize customer feedback from various sources. The system achieved 92% accuracy, enabling faster response times to critical issues.",
+        title: "Sentiment Analysis Dashboard",
+        description: "An interactive dashboard that analyzes sentiment in text data, enabling users to understand emotional tone in customer reviews, social media posts, or other text content.",
         tags: ["Python", "TensorFlow", "Flask", "React", "Docker", "GCP"],
         imageUrl: "https://picsum.photos/seed/project1/400/200",
-        liveDemoUrl: "#",
-        sourceCodeUrl: "#"
+        liveDemoUrl: "https://jobus-ai-application.my.canva.site/dagxxhysk-g",
+        sourceCodeUrl: "https://github.com/Jozi-Navigators/Sentiment-Analysis-Dashboard.git"
     },
     {
-        title: "Image Recognition for Retail Analytics",
-        description: "Built a computer vision system to analyze in-store shelf images, detecting stock levels and product placement. This project utilized convolutional neural networks (CNNs) and resulted in a 15% reduction in out-of-stock incidents.",
+        title: "Image Generation",
+        description: "A specialized content generation tool that produces high-quality outputs for a specific use case",
         tags: ["PyTorch", "OpenCV", "FastAPI", "Kubernetes", "AWS S3"],
         imageUrl: "https://picsum.photos/seed/project2/400/200",
-        liveDemoUrl: "#",
-        sourceCodeUrl: "#"
+        liveDemoUrl: "https://image-gen-xo-main.tiiny.site/",
+        sourceCodeUrl: "https://github.com/Jozi-Navigators/image-gen-xo.git"
     },
     {
-        title: "AI-Powered Capstone Showcase Recommender",
-        description: "A capstone project that recommends compelling presentation topics based on a user's technical skills and interests. This system uses a content-based filtering approach with Gemini API for idea generation.",
+        title: "AI Resume Builder",
+        description: "an intelligent resume generation system that creates customized, ATS-friendly resumes based on user inputs.",
         tags: ["Gemini API", "Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
         imageUrl: "https://picsum.photos/seed/project3/400/200",
-        liveDemoUrl: "#",
-        sourceCodeUrl: "#"
+        liveDemoUrl: "https://ai-resume-builder-nine-mauve.vercel.app/",
+        sourceCodeUrl: "https://github.com/Jozi-Navigators/ai-resume-builder.git"
     },
     {
-        title: "Predictive Maintenance for Industrial Machinery",
+        title: "No-Code Chatbot",
         description: "Designed and implemented a machine learning model to predict equipment failures. By analyzing sensor data, the system provides early warnings, reducing downtime by 20% and maintenance costs by 12%.",
         tags: ["Python", "Scikit-learn", "Pandas", "MQTT", "Grafana"],
         imageUrl: "https://picsum.photos/seed/project4/400/200",
-        liveDemoUrl: "#",
-        sourceCodeUrl: "#"
+        liveDemoUrl: "https://schoolhub.ai/en-US/generate/chatbot/view/6fcb0878-6378-4a97-9489-080ee23e80a3?",
+        sourceCodeUrl: "https://github.com/banelemiles17-io/No-code-ChatBot.git"
     },
     {
-        title: "Serverless Data Processing Pipeline",
-        description: "Constructed an automated, event-driven data pipeline on AWS to process and analyze large datasets. The pipeline uses Lambda functions to transform data, storing results in DynamoDB for real-time analysis.",
+        title: "Celestial Learning Hub",
+        description: "A comprehensive AI application that solves a meaningful real-world problem by integrating multiple AI technologies into a cohesive solution.",
         tags: ["AWS Lambda", "API Gateway", "S3", "DynamoDB", "Node.js"],
         imageUrl: "https://picsum.photos/seed/project5/400/200",
-        liveDemoUrl: "#",
-        sourceCodeUrl: "#"
+        liveDemoUrl: "https://lock-in-one.vercel.app/",
+        sourceCodeUrl: "https://github.com/Jozi-Navigators/-End-to-End-AI-Solution.git"
     },
     {
         title: "Conversational AI Chatbot for Customer Support",

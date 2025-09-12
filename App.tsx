@@ -8,6 +8,7 @@ import Certificates from './components/Certificates';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Experience from './components/Experience';
+import Education from './components/Education';
 
 const FadeIn: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     const [isVisible, setVisible] = React.useState(false);
@@ -42,6 +43,7 @@ const App: React.FC = () => {
         <Hero />
         <div className="container mx-auto max-w-screen-xl px-6 pb-20 md:px-12 lg:px-8">
             <FadeIn><About /></FadeIn>
+            <FadeIn><Education /></FadeIn>
             <FadeIn><Experience /></FadeIn>
             <FadeIn><Skills /></FadeIn>
             <FadeIn><Projects /></FadeIn>

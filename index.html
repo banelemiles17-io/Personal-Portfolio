@@ -30,10 +30,67 @@
     scroll-behavior: smooth;
   }
   body {
-    background-color: #020617; /* Simple, professional dark background */
+    background-color: #000;
     font-family: 'Lato', sans-serif;
     overflow-x: hidden;
     color: #e0e0e0;
+  }
+
+  @keyframes move-background {
+      from { transform: translateY(0); }
+      to { transform: translateY(1000px); }
+  }
+
+  .stars-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-image: linear-gradient(to bottom, #020108 0%, #04041a 50%, #090930 100%);
+  }
+
+  #stars, #stars2, #stars3 {
+      position: absolute;
+      top: -1000px;
+      left: 0;
+      width: 100%;
+      height: 200%;
+      background-repeat: repeat;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-name: move-background;
+  }
+
+  #stars {
+      background-image:
+          radial-gradient(1px 1px at 20px 30px, #eee, rgba(0,0,0,0)),
+          radial-gradient(1px 1px at 40px 70px, #fff, rgba(0,0,0,0)),
+          radial-gradient(1px 1px at 50px 160px, #ddd, rgba(0,0,0,0)),
+          radial-gradient(1px 1px at 90px 40px, #fff, rgba(0,0,0,0)),
+          radial-gradient(1px 1px at 130px 80px, #fff, rgba(0,0,0,0)),
+          radial-gradient(1px 1px at 160px 120px, #ddd, rgba(0,0,0,0));
+      background-size: 250px 250px;
+      animation-duration: 200s;
+  }
+
+  #stars2 {
+      background-image:
+          radial-gradient(2px 2px at 10px 50px, #fff, rgba(0,0,0,0)),
+          radial-gradient(2px 2px at 60px 100px, #fff, rgba(0,0,0,0)),
+          radial-gradient(2px 2px at 150px 150px, #fff, rgba(0,0,0,0));
+      background-size: 300px 300px;
+      animation-duration: 150s;
+  }
+
+  #stars3 {
+      background-image:
+          radial-gradient(2.5px 2.5px at 50px 50px, #fff, rgba(0,0,0,0)),
+          radial-gradient(3px 3px at 200px 100px, #fff, rgba(0,0,0,0));
+      background-size: 400px 400px;
+      animation-duration: 100s;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -57,6 +114,11 @@
 </style>
 </head>
   <body>
+    <div class="stars-wrapper">
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+    </div>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <script type="module" src="/index.tsx"></script>
