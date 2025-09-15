@@ -134,66 +134,65 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
         ]
     }
 ];
-
 export const CERTIFICATES: Certificate[] = [
     {
         title: "Generative AI with Large Language Models",
         issuer: "AWS & DeepLearning.AI",
-        imageUrl: "",
+        imageUrl: "/images/coursera_generative_ai_with_large_language_models.jpg",
         verifyUrl: "https://coursera.org/verify/QE2R7LP415DL"
     },
     {
         title: "Introduction to Generative AI",
         issuer: "Google Cloud",
-        imageUrl: "",
+        imageUrl: "/images/coursera_intro_to_generative_ai.jpg",
         verifyUrl: "https://coursera.org/verify/1BLRGFXJ9MZD"
     },
     {
         title: "Introduction to Artificial Intelligence (AI)",
         issuer: "IBM",
-        imageUrl: "",
+        imageUrl: "/images/coursera_introduction_to_artificial_intelligence_ai.jpg",
         verifyUrl: "https://coursera.org/verify/G3PXIL7L9XER"
     },
     {
         title: "Introduction to Responsible AI",
         issuer: "Google Cloud",
-        imageUrl: "",
+        imageUrl: "/images/coursera_introduction_to_responsible_ai.jpg",
         verifyUrl: "https://coursera.org/verify/I1GDPP3983U6"
     },
     {
         title: "Python for Data Science, AI & Development",
         issuer: "IBM",
-        imageUrl: "",
+        imageUrl: "/images/coursera_python_for_data_science_ai__development.jpg",
         verifyUrl: "https://coursera.org/verify/CYSVQVG3ST8Q"
     },
     {
         title: "AI Essentials",
         issuer: "Intel",
-        imageUrl: "",
+        imageUrl: "/images/coursera_ai_essentials.jpg",
         verifyUrl: "https://coursera.org/verify/3B5J9VX1V9KW"
     },
     {
         title: "AI For Everyone",
         issuer: "DeepLearning.AI",
-        imageUrl: "",
+        imageUrl: "/images/coursera_ai_for_everyone.jpg",
         verifyUrl: "https://coursera.org/verify/AV4LA0C68K08"
     },
     {
         title: "AI Foundations: Prompt Engineering with ChatGPT",
         issuer: "Arizona State University",
-        imageUrl: "",
+        imageUrl: "/images/coursera_ai_foundations_prompt_engineering_with_chatgpt.jpg",
         verifyUrl: "https://coursera.org/verify/HXHLZTVB05QT"
     },
     {
         title: "Artificial Intelligence on Microsoft Azure",
         issuer: "Microsoft",
-        imageUrl: "",
+        imageUrl: "/images/coursera_artificial_intelligence_on_microsoft_azure.jpg",
         verifyUrl: "https://coursera.org/verify/HCFK8GATMBZZ"
     },
     {
         title: "Building AI Powered Chatbots Without Programming",
         issuer: "IBM",
-        imageUrl: "",
+        imageUrl: "/images/coursera_building_ai_powered_chatbots.jpg",
         verifyUrl: "https://coursera.org/verify/MS0E4OMQVCKO"
     }
 ];
