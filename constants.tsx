@@ -40,7 +40,7 @@ export const EXPERIENCE: Experience[] = [
     {
         role: "Digital Associate Intern",
         company: "Capaciti",
-        period: "Jul 2024 - Present",
+        period: "Jul 2025 - Present",
         description: [
             "Learned how to prompt LLMs to create applications.",
             "Assisted in the development and testing of a sentiment analysis dashboard among other projects.",
