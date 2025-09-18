@@ -1,79 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { CERTIFICATES } from '../constants';
 import CertificateCard from './CertificateCard';
+import ImageModal from './ImageModal';
 import type { Certificate } from '../types';
-
-// --- CertificateModal Component ---
-interface CertificateModalProps {
-    isOpen: boolean;
-    onClose: () => void;
-    certificate: Certificate | null;
-}
-
-const CertificateModal: React.FC<CertificateModalProps> = ({ isOpen, onClose, certificate }) => {
-    useEffect(() => {
-        const handleKeyDown = (event: KeyboardEvent) => {
-            if (event.key === 'Escape') {
-                onClose();
-            }
-        };
-
-        if (isOpen) {
-            document.body.style.overflow = 'hidden';
-            window.addEventListener('keydown', handleKeyDown);
-        } else {
-            document.body.style.overflow = 'unset';
-        }
-
-        return () => {
-            window.removeEventListener('keydown', handleKeyDown);
-            document.body.style.overflow = 'unset';
-        };
-    }, [isOpen, onClose]);
-
-    if (!isOpen || !certificate) return null;
-
-    return (
-        <div 
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-80 transition-opacity duration-300 animate-fadeIn"
-            aria-labelledby="certificate-modal-title"
-            role="dialog"
-            aria-modal="true"
-            onClick={onClose}
-        >
-            <div 
-                className="relative bg-neutral-900 rounded-lg shadow-2xl w-full max-w-3xl mx-4 my-8 p-6 transform transition-all duration-300 animate-fadeInUp border border-teal-500/20"
-                onClick={(e) => e.stopPropagation()}
-            >
-                <div className="flex justify-between items-start mb-4">
-                    <h3 id="certificate-modal-title" className="text-xl font-bold text-slate-100">{certificate.title}</h3>
-                    <button 
-                        onClick={onClose}
-                        className="text-slate-400 hover:text-white transition-colors"
-                        aria-label="Close modal"
-                    >
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                    </button>
-                </div>
-                
-                <div className="mb-6 max-h-[60vh] overflow-y-auto rounded-lg border border-neutral-700">
-                    <img src={certificate.imageUrl} alt={`Certificate for ${certificate.title}`} className="w-full h-auto object-contain rounded-md" />
-                </div>
-                
-                <a 
-                    href={certificate.verifyUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full inline-flex items-center justify-center rounded-md bg-teal-600 px-4 py-3 text-sm font-medium text-white transition-all duration-300 hover:bg-teal-700 hover:shadow-lg hover:shadow-teal-500/40 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 focus:ring-offset-neutral-900"
-                >
-                    Verify Certificate
-                </a>
-            </div>
-        </div>
-    );
-};
 
 const Certificates: React.FC = () => {
     const [isExpanded, setIsExpanded] = useState(false);
@@ -93,6 +22,17 @@ const Certificates: React.FC = () => {
         setIsModalOpen(false);
         setSelectedCertificate(null);
     };
+
+    const verifyButton = selectedCertificate ? (
+        <a 
+            href={selectedCertificate.verifyUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full inline-flex items-center justify-center rounded-md bg-teal-600 px-4 py-3 text-sm font-medium text-white transition-all duration-300 hover:bg-teal-700 hover:shadow-lg hover:shadow-teal-500/40 transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 focus:ring-offset-neutral-900"
+        >
+            Verify Certificate
+        </a>
+    ) : null;
 
     return (
         <>
@@ -124,11 +64,15 @@ const Certificates: React.FC = () => {
                     </div>
                 )}
             </section>
-            <CertificateModal 
-                isOpen={isModalOpen}
-                onClose={handleCloseModal}
-                certificate={selectedCertificate}
-            />
+            {selectedCertificate && (
+                <ImageModal 
+                    isOpen={isModalOpen}
+                    onClose={handleCloseModal}
+                    imageUrl={selectedCertificate.imageUrl}
+                    title={selectedCertificate.title}
+                    actionButton={verifyButton}
+                />
+            )}
         </>
     );
 };
